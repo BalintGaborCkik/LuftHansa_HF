@@ -1,0 +1,7 @@
+C:\Users\User\Desktop\Tanulás\Közgáz\11.B\Programozás\Lufthansa\Lufthansa\obj\Debug\Lufthansa.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Tanulás\Közgáz\11.B\Programozás\Lufthansa\Lufthansa\obj\Debug\Lufthansa.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Tanulás\Közgáz\11.B\Programozás\Lufthansa\Lufthansa\bin\Debug\Lufthansa.exe.config
+C:\Users\User\Desktop\Tanulás\Közgáz\11.B\Programozás\Lufthansa\Lufthansa\bin\Debug\Lufthansa.exe
+C:\Users\User\Desktop\Tanulás\Közgáz\11.B\Programozás\Lufthansa\Lufthansa\bin\Debug\Lufthansa.pdb
+C:\Users\User\Desktop\Tanulás\Közgáz\11.B\Programozás\Lufthansa\Lufthansa\obj\Debug\Lufthansa.exe
+C:\Users\User\Desktop\Tanulás\Közgáz\11.B\Programozás\Lufthansa\Lufthansa\obj\Debug\Lufthansa.pdb
