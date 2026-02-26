@@ -47,6 +47,32 @@ namespace Lufthansa
         {
             return k.am < 1500 && k.av < 6;
         }
+        static string kadikElem(Dictionary<string,csaladiCsomagok> cscs,int k)
+        {
+            List<string> ids = new List<string>();
+            List<double> sms = new List<double>();
+            foreach (var item in cscs)
+            {
+                ids.Add(item.Key);
+                sms.Add(item.Value.sm);
+            }
+            for(int i = 0; i< ids.Count; i++)
+            {
+                for(int j = i; j< ids.Count; j++)
+                {
+                    if (sms[i] < sms[j])
+                    {
+                        string cs1 = ids[i];
+                        ids[i] = ids[j];
+                        ids[j] = cs1;
+                        double cs2 = sms[i];
+                        sms[i] = sms[j];
+                        sms[j] = cs2;
+                    }
+                }
+            }
+            return ids[k];
+        }
         static Dictionary<string,csaladiCsomagok> beolvasas(string path)
         {
             Dictionary<string, csaladiCsomagok> cscs = new Dictionary<string, csaladiCsomagok>();
