@@ -21,6 +21,32 @@ namespace Lufthansa
             public double sv;
             public List<Csomag> csomagok;
         }
+        public struct kontener
+        {
+            public int id;
+            public int k;
+            public double am;
+            public double av;
+            public List<csaladiCsomagok> bcscs;
+        }
+        static List<kontener> inicializalas()
+        {
+            List<kontener> ks = new List<kontener>();
+            for(int i = 0; i< 5; i++)
+            {
+                kontener k = new kontener();
+                k.id = i;
+                k.k = i - 2;
+                k.am = 0;
+                k.av = 0;
+                k.bcscs = new List<csaladiCsomagok>();
+            }
+            return ks;
+        }
+        static bool belefere(kontener k)
+        {
+            return k.am < 1500 && k.av < 6;
+        }
         static Dictionary<string,csaladiCsomagok> beolvasas(string path)
         {
             Dictionary<string, csaladiCsomagok> cscs = new Dictionary<string, csaladiCsomagok>();
@@ -56,6 +82,7 @@ namespace Lufthansa
         static void Main(string[] args)
         {
             Dictionary<string, csaladiCsomagok> cscs = beolvasas("../../csomagok.csv");
+            List<kontener> ks = inicializalas();
             Console.ReadKey();
         }
     }
